@@ -16,7 +16,6 @@ int read_cmd(char **cmd_line)
 	if (rd_len == -1)
 	{
 		free(*cmd_line);
-		write(STDOUT_FILENO, "\n", 1);
 		return (-1);
 	}
 	return (rd_len - 1);

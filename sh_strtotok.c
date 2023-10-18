@@ -19,7 +19,7 @@ char *strtotok(char *str, const char *delim)
 			curr_pos = str;
 		if (curr_pos && *curr_pos)
 		{
-			while (*curr_pos && chr_instr(*curr_pos, delim))
+			while (*curr_pos && chrstr(*curr_pos, delim))
 				curr_pos++;
 			if (*curr_pos)
 			{
